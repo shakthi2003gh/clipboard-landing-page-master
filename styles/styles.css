@@ -45,6 +45,15 @@ h1 {
   font-size: 3.2rem;
 }
 
+h2 {
+  font-size: 2.9rem;
+}
+
+h2,
+h3 {
+  margin: 0;
+}
+
 p {
   max-width: 500px;
   line-height: 2.5ch;
@@ -73,9 +82,21 @@ p {
   border-bottom: 3px solid hsl(233, 59%, 58%);
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
 @media screen and (min-width: 500px) {
   .button {
     width: 220px;
+  }
+
+  .button-container {
+    flex-direction: row;
   }
 }
 
@@ -91,19 +112,9 @@ p {
   margin: 5rem 0;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
 @media screen and (min-width: 500px) {
   body {
     background: url(/images/bg-header-desktop.png) no-repeat top;
-  }
-
-  .button-container {
-    flex-direction: row;
   }
 }
 
@@ -129,11 +140,10 @@ p {
 
 .feature__heading {
   font-size: 2.5rem;
-  margin: 0;
 }
 
 .feature__content {
-  margin: 1rem 0;
+  margin: 1rem 2rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -156,8 +166,50 @@ p {
     transform: translateX(-25rem);
   }
 
-  .feature .feature__content {
+  .feature__content {
     max-width: 350px;
     margin-right: 2rem;
+    margin-left: 0;
+  }
+}
+
+/* usability block */
+.usability.block {
+  margin-bottom: 6rem;
+}
+
+.usability-image {
+  width: 100%;
+  max-width: 70rem;
+  margin-top: 5rem;
+}
+
+/* workflow block */
+.workflow.block {
+  margin-top: 6rem;
+}
+
+.workflow-tools {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+.tool__content {
+  margin: 2rem 0;
+}
+
+.tool-icon {
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 900px) {
+  .workflow-tools {
+    flex-direction: row;
+    column-gap: 3rem;
+  }
+
+  .tool__content {
+    max-width: 360px;
   }
 }
