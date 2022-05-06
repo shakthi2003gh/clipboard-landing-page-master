@@ -77,10 +77,18 @@ p {
   border-bottom: 3px solid hsl(171, 59%, 40%);
 }
 
+.button--primary:hover {
+  background-color: hsl(171, 49%, 52%);
+}
+
 .button--secondary {
   color: white;
   background-color: var(--color-secondary);
   border-bottom: 3px solid hsl(233, 59%, 58%);
+}
+
+.button--secondary:hover {
+  background-color: hsl(233, 79%, 72%);
 }
 
 .button-container {
@@ -268,6 +276,10 @@ footer > div {
   text-decoration: none;
   color: var(--color-heading);
   cursor: pointer;
+}
+
+.footer-links a:hover {
+  color: var(--color-primary);
 }
 
 .social-media-links {
