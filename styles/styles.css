@@ -42,7 +42,8 @@ p {
 /* Button */
 .button {
   text-decoration: none;
-  padding: 1.2rem 35px;
+  width: 100%;
+  padding: 12px 35px;
   border-radius: 50px;
   border: 0;
 }
@@ -57,4 +58,10 @@ p {
   color: white;
   background-color: var(--color-secondary);
   border-bottom: 3px solid hsl(233, 59%, 58%);
+}
+
+@media screen and (min-width: 400px) {
+  .button {
+    width: 220px;
+  }
 }
