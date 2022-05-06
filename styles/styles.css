@@ -1,0 +1,19 @@
+@import url(/styles/normalize.css);
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Color palette */
+:root {
+  --color-primary: hsl(171, 66%, 44%);
+  --color-secondary: hsl(233, 100%, 69%);
+  --color-heading: hsl(210, 10%, 33%);
+  --color-text: hsl(201, 11%, 66%);
+}
