@@ -10,6 +10,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  height: 100%;
+}
+
 /* Color palette */
 :root {
   --color-primary: hsl(171, 66%, 44%);
@@ -33,4 +37,24 @@ h3 {
 
 p {
   color: var(--color-text);
+}
+
+/* Button */
+.button {
+  text-decoration: none;
+  padding: 1.2rem 35px;
+  border-radius: 50px;
+  border: 0;
+}
+
+.button--primary {
+  color: white;
+  background-color: var(--color-primary);
+  border-bottom: 3px solid hsl(171, 59%, 40%);
+}
+
+.button--secondary {
+  color: white;
+  background-color: var(--color-secondary);
+  border-bottom: 3px solid hsl(233, 59%, 58%);
 }
