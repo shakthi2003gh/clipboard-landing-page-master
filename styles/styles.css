@@ -17,3 +17,20 @@ html {
   --color-heading: hsl(210, 10%, 33%);
   --color-text: hsl(201, 11%, 66%);
 }
+
+/* Typography */
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-heading);
+}
+
+p {
+  color: var(--color-text);
+}
