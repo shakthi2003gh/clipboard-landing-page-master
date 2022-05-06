@@ -63,11 +63,12 @@ p {
 
 /* Button */
 .button {
-  text-decoration: none;
-  width: 100%;
-  padding: 12px 35px;
   border-radius: 50px;
   border: 0;
+  padding: 12px 35px;
+  text-decoration: none;
+  width: 100%;
+  cursor: pointer;
 }
 
 .button--primary {
@@ -84,11 +85,11 @@ p {
 
 .button-container {
   display: flex;
-  justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  width: 100%;
+  justify-content: center;
   margin-top: 5rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 500px) {
@@ -150,11 +151,11 @@ p {
 @media screen and (min-width: 600px) {
   .feature-section {
     display: flex;
-    justify-content: center;
     flex-shrink: 1;
     gap: 5rem;
-    text-align: left;
+    justify-content: center;
     margin: 0 auto 5rem;
+    text-align: left;
   }
 
   .feature-image {
@@ -217,14 +218,14 @@ p {
 
 /* top company */
 .top-company {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 7rem;
-  max-width: 1000px;
-  margin: 0 auto;
   flex-shrink: 1;
+  gap: 7rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 .top-company > img {
@@ -234,5 +235,59 @@ p {
 @media screen and (min-width: 1050px) {
   .top-company {
     flex-direction: row;
+  }
+}
+
+/* footer block */
+footer {
+  background-color: hsl(220, 18%, 97%);
+}
+
+footer > div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 4rem;
+}
+
+.footer-image {
+  width: 50px;
+}
+
+.footer-links {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  gap: 2.5rem;
+  margin: 5rem 0;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: var(--color-heading);
+  cursor: pointer;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1000px) {
+  footer > div {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5rem;
+    row-gap: 1rem;
+    margin: 0;
+    justify-items: start;
   }
 }
